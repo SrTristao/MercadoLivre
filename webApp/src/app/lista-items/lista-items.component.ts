@@ -12,14 +12,14 @@ export class ListaItemsComponent implements OnInit {
   public items;
   constructor(private route: ActivatedRoute, private router: Router, private data: Data, private http: HttpClient) {
     this.items = [];
+    console.log('haha');
   }
 
   ngOnInit() {
     if (this.data.storage === undefined) {
       this.router.navigate(['/']);
     } else {
-      this.items = this.data.storage;
-      console.log(this.items);
+      this.items = this.data.storage;      
     }
   }
 

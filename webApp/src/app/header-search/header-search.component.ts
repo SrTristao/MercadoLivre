@@ -20,8 +20,18 @@ export class HeaderSearchComponent implements OnInit {
     if (this.searchItems !== '' && this.searchItems !== undefined) {
       this.http.get(`http://127.0.0.1:3131/api/sites/${this.searchItems}`, {})
       .subscribe(data => {
-        this.data.storage = data;
-        this.router.navigate(['/items', {search: this.searchItems}]);
+        try {
+          if (data[0].description) {
+            this.data.storage = {};
+            this.data.storage.itemDetalhe = data[0];
+            this.router.navigate(['/itemDetalhe', {id: data[0].id}]);
+          } else if (data !== undefined) {
+            this.data.storage = data;
+            this.router.navigate(['/items', {search: this.searchItems}]);
+          }
+      } catch(error) {
+        this.router.navigate(['/notFound', {search: this.searchItems}]);
+      }
       });
     }
   }
