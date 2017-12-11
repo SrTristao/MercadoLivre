@@ -18,9 +18,6 @@ export class ItemDetalheComponent implements OnInit {
       this.router.navigate(['/']);
     } else {
       this.item = this.data.storage.itemDetalhe;
-      this.description = this.data.storage.description;
-      console.log(this.item);
-      console.log(this.data.storage.description);
     }
   }
 

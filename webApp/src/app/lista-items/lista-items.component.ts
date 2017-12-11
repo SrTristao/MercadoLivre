@@ -28,6 +28,8 @@ export class ListaItemsComponent implements OnInit {
     .subscribe(itemDetalhe => {
       this.data.storage.itemDetalhe = itemDetalhe;
       this.router.navigate(['/itemDetalhe', {id: item.id}]);
+    }, error => {
+      this.router.navigate(['/error', {error: 'serviceError'}]);
     });
   }
 

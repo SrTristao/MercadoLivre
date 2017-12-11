@@ -30,10 +30,16 @@ export class HeaderSearchComponent implements OnInit {
             this.router.navigate(['/items', {search: this.searchItems}]);
           }
       } catch(error) {
-        this.router.navigate(['/notFound', {search: this.searchItems}]);
+        this.router.navigate(['/notFound', {error: 'notFound'}]);
       }
+      }, error => {
+        this.router.navigate(['/error', {error: 'serviceError'}]);
       });
     }
+  }
+
+  home() {
+    this.router.navigate(['/']);
   }
 
 }

@@ -14,7 +14,8 @@ const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'items', component: ListaItemsComponent},
   {path: 'itemDetalhe', component: ItemDetalheComponent},
-  {path: 'notFound', component: PageErrorComponent}
+  {path: 'notFound', component: PageErrorComponent},
+  {path: 'error', component: PageErrorComponent}
 ];
 
 @NgModule({
