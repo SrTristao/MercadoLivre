@@ -12,13 +12,13 @@ TypeScript? Why not? =).
 
 ### <i class="icon-hdd"></i> How install and execute
 
+### Execute Server
 ### Enter server folder
 
 > npm install
 
 ##### NodeJS 8.x.x > because has async/await
 
-### Execute server
  First compile typeScript, after start server.
  > - npm run compile
  > - npm run start
@@ -27,6 +27,9 @@ TypeScript? Why not? =).
 
 ### Enter webApp folder
 
-The gulp has been configured with browserify.
+> npm install
+
+ Start
  > - npm start
+ > - ou ng serve --open 
  
