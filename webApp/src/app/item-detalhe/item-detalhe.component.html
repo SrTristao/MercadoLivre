@@ -1,0 +1,19 @@
+<div class="container margin-items">
+  <div class="item-detalhe">
+    <div class="top">
+      <div>
+        <img id="thumbnail" [src]="item.thumbnail"/>
+      </div>
+      <div class="comprar">
+        <p class="detalhe"> Novo - 234 vendidos</p>
+        <p class="titulo"> {{item.title}} </p>
+        <p class="preco"> {{item.price | currency}} </p>
+        <button class="btn btn-primary"> COMPRAR </button>
+      </div>
+    </div>
+    <div class="descricao">
+      <p class="titulo-descricao"> Descrição do Produto </p>
+      <div [innerHTML]="item.description.text"></div>
+    </div>
+  </div>
+</div>

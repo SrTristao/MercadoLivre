@@ -1,0 +1,17 @@
+<div class="container margin-items">
+  <div class="line" *ngFor="let item of items">
+    <div class="items" (click)="detalhesItem(item)">
+      <div id="foto">
+        <img id="thumbnail" [src]="item.thumbnail"/>
+      </div>
+      <div class="descricao">
+        <p class="preco"> {{item.price | currency}} </p>
+        <p> {{item.title}} </p>
+        <p> Completo Único </p>
+      </div>
+      <div class="cidade">
+        <p> {{item.address.city_name}} </p>
+      </div>
+    </div>
+  </div>    
+</div>
