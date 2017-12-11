@@ -1,14 +1,8 @@
-
-
-
-
-
-
-## Control Panel
+## Mercado Livre Test
 
 This project has been created with NodeJS + TypeScript + AngularJS 5+
 
-TypeScript? Why not? =).
+TypeScript with nodeJS? Why not? =).
 
 ### <i class="icon-hdd"></i> How install and execute
 
@@ -30,6 +24,5 @@ TypeScript? Why not? =).
 > npm install
 
  Start
- > - npm start
- > - ou ng serve --open 
+ > - npm start or ng serve --open 
  
