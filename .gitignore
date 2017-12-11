@@ -8,6 +8,7 @@
 # dependencies
 server/node_modules
 webApp/node_modules
+server/dist_server
 
 # IDEs and editors
 /.idea
